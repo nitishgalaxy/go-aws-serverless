@@ -1,0 +1,67 @@
+Security through IAM:-
+---------------------------
+
+1. Create Policy:
+        - Choose S3 
+        - From Actions, select:
+            i. List 
+            ii. Read 
+            iii. Write
+        - Ressource:
+            i. Choose "Specific"
+            ii. Add ARN of the buckets you want to provide access.
+
+
+        - Use Visual Editor to create policies.
+        - All policies in AWS can be represented as JSON.
+
+
+
+2. Create Role 
+    - Attach as many policies as you want 
+
+
+---------------------------
+
+// Main library to run go code on lambda
+go get github.com/aws/aws-lambda-go
+
+go get github.com/aws/aws-sdk-go
+
+
+
+---------------------------
+
+First Lambda Go Code 
+
+
+go get github.com/aws/aws-lambda-go
+
+
+sh deploy.sh 
+
+Upload the zip file.
+
+Set Handler Name:  main
+
+
+
+Create Test:  TestNitish
+
+{
+  "Username": "Nitish"
+}
+
+
+
+
+Sample Codes:
+
+https://github.com/aws/aws-lambda-go/tree/master/events
+
+
+https://github.com/aws/aws-lambda-go/blob/master/events/README_ApiGatewayEvent.md
+
+
+https://www.alexedwards.net/blog/serverless-api-with-go-and-aws-lambda
+
